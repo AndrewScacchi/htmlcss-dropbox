@@ -1,1 +1,103 @@
 /* General Setting */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Debug */
+    border: 1px solid red;
+}
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+ul li {
+    list-style: none;
+}
+.container {
+    margin: 10px 0;
+}
+
+/* HEADER SETTINGS */
+/* Sticky header */
+header { 
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+/* Floating the two navs */
+header .nav-left {
+    float: left;
+}
+header .nav-right {
+    float: right;
+}
+header ul {
+    margin: 1em 1em;
+}
+.navbar ul li {
+    float: left;
+    margin: 0.2em 0.5em;
+}
+
+
+/* MAIN SETTINGS */
+/* Jumbotron settings */
+
+#main-jumbo {
+    margin-top: 60px;
+    padding: 5% 10%;
+    min-height: 300px;
+    /* debug */
+    background-color: aqua;
+}
+#main-jumbo .container {
+    position: relative;
+    float: left;
+    width: 40%;
+    padding-right: 2em;
+}
+
+.img-jumbo {
+    position: absolute;
+    /* Debug */
+    max-width: 900px;
+    width: 150%;
+    right: -150%;
+    top: 0;
+}
+
+/* Main Debug Setting */
+
+.temp {
+    height: 300px;
+    width: 100%;
+}
+
+/* Footer Setting */
+
+footer {
+    padding: 5% 10%;
+    /* debug */
+    background-color: blue;
+}
+footer ul {
+    float: left;
+    width: 20%;
+}
+footer .lang-select {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em 0 0.2em;
+    border-top: 1px solid black;
+}
+
+
+/* Clearfix Settings */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

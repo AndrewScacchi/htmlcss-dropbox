@@ -343,12 +343,12 @@ article div  *{
     left: 0;
     transform: translate(0);
     width: 100%;
-    padding: 3em;
+    padding: 2em;
     filter: invert(0%) sepia(98%) saturate(7437%) hue-rotate(183deg) brightness(105%) contrast(98%);
 }
 #square-big-center p {
-    margin: 4em 0 1em;
-    line-height: 1.5em;
+    margin: 2.5em 0 1em;
+    line-height: 1.2em;
     font-size: 1.2em;
 }
 
@@ -366,9 +366,27 @@ article div  *{
 }
 
 /* FAQ Sections */
-
-
-
+#main-faq h2 {
+    font-size: 3em;
+    margin-top: 0;
+}
+#main-faq ul {
+    width: 100%;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#main-faq ul li {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #dcdcde;
+}
+#main-faq ul i {
+    float: right;
+    margin-right: 2em;
+}
+.faq-first{
+    border-top: 1px solid #dcdcde;
+}
 
 /* FOOTER */
 

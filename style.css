@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Debug */
-    /* border: 1px solid red; */
 }
 #wrapper {
     width: 100%;
@@ -23,15 +21,17 @@ h1 {
     font-size: 3em;
     font-weight: bold;
 }
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.2em 0;
+}
+
 
 /* COLORS
     btn   #0061ff        
     back     #b4d0e7      
-    carous   9colours...   
     footer  #000000
-
-
-
 */
 
 /* HEADER SETTINGS */
@@ -41,6 +41,7 @@ header {
     top: 0;
     width: 100%;
     background-color: white;
+    border-bottom: 1px solid black;
     z-index: 10;
 }
 /* Floating the two navs */
@@ -73,7 +74,7 @@ nav ul li {
     min-height: 550px;
     background-color: #b4d0e7;
 }
-#main-jumbo section {
+#main-jumbo div {
     position: relative;
     float: left;
     width: 40%;
@@ -90,21 +91,152 @@ nav ul li {
     top: 0;
 }
 
-/* Main Debug Setting */
-
+/* Container Rules */
 .main-container {
-    width: 80%;
+    width: 70%;
     min-height: 300px;
     margin: 100px auto;
 }
+.main-container > * {
+    float: left;
+}
+.main-container h2{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 3.4em;
+}
+.main-container .fattura {
+    width: 100%;
+    margin: 1em 0 4em;
+}
+.main-container .fattura div {
+    display: inline-block;
+}
+.fattura i {
+    color: #0061ff;
+}
+
 /* Plans Section */
 
+article.plan {
+    width: 30%;
+}
+article.plan-center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+article div  *{
+    margin: 1em 0;
+}
+.plan-group {
+    text-align: center;
+    padding: 0.5em 1em;
+    width: 100%;
+    border: 1px solid black;
+}
+.plan-main {
+    height: 900px;
+    padding: 1em 1.5em;
+    border: 1px solid black;
+    border-top: none;
+}
+.plan-main a {
+    font-weight: bold;
+    color: #0061ff;
+}
+.plan-main .btn {
+    width: 100%;
+    margin: 5% 0;
+    padding: 1em 2em;
+}
+
+.plan-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+.plan-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em 0 ;
+}
+.plan-price-range {
+    font-weight: small;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+.plan-offer li {
+    padding-left: 2em;
+    position: relative;
+}
+.plan-offer .list-icon,
+.list-item i {
+    position: absolute;
+    top: -0.8em;
+    left: 0em;
+}
+
+.call span {
+    display: inline-block;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+.list-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.list-item {
+    position: relative;
+    padding-left: 2em;
+}
+.list-item i {
+    color: #0061ff;
+}
+
+/* plan bottom */
+#plan-bottom {
+    width: 100%;
+    margin: 50px 0;
+}
+#plan-bottom .plan-main {
+    height: 250px;
+}
+#plan-bottom .plan-main div {
+    float: left;
+}
+#plan-bottom .plan-main .btn {
+    float: right;
+    width: 30%;
+    margin-top: 2em;
+}
+#plan-bottom p {
+    display: inline-block;
+    width: 100%;
+}
+
+/* MAIN SECTION AGAIN */
+/* Partner Section */
+#main-partner img {
+    float: left;
+    width: 60%;
+}
+#main-partner aside {
+    float: right;
+    width: 40%;
+    padding: 2em 0 2em 3em;
+}
+#main-partner aside > * {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+#main-partner .aside-title {
+    font-size: 1.6em;
+    font-weight: bold;
+}
 
 
-
-
-
-/* Footer Setting */
+/* FOOTER */
 
 footer {
     padding: 5% 10%;
@@ -141,8 +273,10 @@ footer .foot-title {
     background-color: #0061ff;
     border: none;
 }
-.btn-login {
-    
+.btn-white {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
 }
 
 /* Icons Styles */

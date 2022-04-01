@@ -37,7 +37,7 @@
         <!-- Big Jumbo Tron floating and img in absolute positioning -->
         <section id="main-jumbo" class="jumbo clearfix">
             <h1>Tutto ciò che ti serve per il lavoro in un unico posto</h1>
-            <section>
+            <div>
                 <img class="img-jumbo" src="img/jumbo.png" alt="Jumbotron image">
                 <p> 
                     Finalmente tutti i tuoi strumenti, contenuti e 
@@ -48,62 +48,262 @@
                 <button class="btn">Inizia la tua prova gratuita</button>
                 <p>Annulla in qualsiasi momento</p>
                 <i id="icon-arrow-down" class="fa-solid fa-arrow-down"></i>
-            </section>
+            </div>
         </section>
         <!-- Rest of main, title, short radio select, 4 different boxes -->
         <section id="main-plans" class="main-container clearfix">
             <h2 class="cont-title">Trova il piano Dropbox Business che fa per te</h2>
             <div class="fattura">
-                <div class=>Fatturazione mensile</div>
-                <div class=>Fatturazione annuale</div>
+                <div>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    Fatturazione mensile</div>
+                <div>
+                    <i class="fa-regular fa-circle"></i>
+                    Fatturazione annuale
+                </div>
             </div>
             <!-- 4 Boxes in float, 3 + 1 full page -->
-            <article class="plans">
-                <div class="plans-group"></div>
-                <div class="plans-main">
-                    <h4>Professional</h4>
-                    <div class="price">19.99$</div>
-                    <div class="price-range">/mese</div>
-                    <ul class="price-offer">
-                        <li>1 utente</li>
-                        <li>3TB di spazio di archiviazione sicuro</li>
+            <article class="plan">
+                <div class="plan-group">                            
+                    <i class="list-icon fa-regular fa-user"></i> 
+                    Singolo</div>
+                <div class="plan-main">
+                    <h4 class="plan-title">Professional</h4>
+                    <div class="plan-price">19.99$</div>
+                    <div class="plan-price-range">/mese</div>
+                    <ul class="plan-offer">
                         <li>
+                            <i class="list-icon fa-regular fa-user"></i> 
+                            1 utente
+                        </li>
+                        <li>
+                            <i class="list-icon fa-regular fa-folder"></i>
+                            3TB di spazio di archiviazione sicuro
+                        </li>
+                        <li>
+                            <i class="list-icon fa-solid fa-pen"></i>
                             Funzioni di produttività premium 
                             e condivisione file semplice e sicura
                         </li>
                     </ul>
                     <button class="btn">Prova gratis per 30 giorni</button>
-                    <div class="call">oppure <a href="">aquista ora</a></div>
-                    
+                    <div class="call">
+                        <span>oppure</span>
+                        <a href="">aquista ora</a>
+                    </div>
                     <ul class="plans-list">
                         <li class="list-title">Punti salienti del piano</li>
-                        <li>
-                            <!-- icon here -->
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
                             Invia file fino a 100GB con DropBox
                         </li>
-                        <li>
-                            <!-- icon here -->
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
                             Cartelle offline su dispositivi mobili
                         </li>
-                        <li>
-                            <!-- icon here -->
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
                             Pulizia remota dell'account
                         </li>
-                        <li>
-                            <!-- icon here -->
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
                             Filigrana documento
                         </li>
-                        <li>
-                            <!-- icon here -->
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
                             Assistenza prioritaria via email e chat
                         </li>
                     </ul>
                 </div>
             </article>
-
-
+            <article class="plan plan-center">
+                <div class="plan-group">                            
+                    <i class="fa-regular fa-building"></i>
+                    Team</div>
+                <div class="plan-main">
+                    <h4 class="plan-title">Standard</h4>
+                    <div class="plan-price">19.99$</div>
+                    <div class="plan-price-range">/ utente / mese / a partire da 3 utenti</div>
+                    <ul class="plan-offer">
+                        <li>
+                            <i class="list-icon fa-regular fa-user"></i> 
+                            1 utente
+                        </li>
+                        <li>
+                            <i class="list-icon fa-regular fa-folder"></i>
+                            3TB di spazio di archiviazione sicuro
+                        </li>
+                        <li>
+                            <i class="list-icon fa-solid fa-pen"></i>
+                            Funzioni di produttività premium 
+                            e condivisione file semplice e sicura
+                        </li>
+                    </ul>
+                    <button class="btn">Prova gratis per 30 giorni</button>
+                    <div class="call">
+                        <span>oppure</span>
+                        <a href="">aquista ora</a>
+                    </div>
+                    <ul class="plans-list">
+                        <li class="list-title">Punti salienti del piano</li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Invia file fino a 100GB con DropBox
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Cartelle offline su dispositivi mobili
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Pulizia remota dell'account
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Filigrana documento
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Assistenza prioritaria via email e chat
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Filigrana documento
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Assistenza prioritaria via email e chat
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="plan">
+                <div class="plan-group">                            
+                    <i class="list-icon fa-regular fa-building"></i> 
+                    Team</div>
+                <div class="plan-main">
+                    <h4 class="plan-title">Advance</h4>
+                    <div class="plan-price">19.99$</div>
+                    <div class="plan-price-range">/ utente / mese / a partire da 3 utenti</div>
+                    <ul class="plan-offer">
+                        <li>
+                            <i class="list-icon fa-regular fa-user"></i> 
+                            1 utente
+                        </li>
+                        <li>
+                            <i class="list-icon fa-regular fa-folder"></i>
+                            3TB di spazio di archiviazione sicuro
+                        </li>
+                        <li>
+                            <i class="list-icon fa-solid fa-pen"></i>
+                            Funzioni di produttività premium 
+                            e condivisione file semplice e sicura
+                        </li>
+                    </ul>
+                    <button class="btn">Prova gratis per 30 giorni</button>
+                    <div class="call">
+                        <span>oppure</span>
+                        <a href="">aquista ora</a>
+                    </div>
+                    <ul class="plans-list">
+                        <li class="list-title">Punti salienti del piano</li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Invia file fino a 100GB con DropBox
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Cartelle offline su dispositivi mobili
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Pulizia remota dell'account
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Filigrana documento
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Assistenza prioritaria via email e chat
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article id="plan-bottom" class="plan container">
+                <div class="plan-group">                            
+                    <i class="list-icon fa-regular fa-building"></i> 
+                    Team</div>
+                <div class="plan-main clearfix">
+                    <div>
+                        <h4 class="plan-title">Enterprise</h4>
+                        <div class="plan-price">Contatta l'ufficio vendite per i nostri prezzi</div>
+                    </div>
+                    <!-- <div class="plan-price-range">/mese</div> -->
+                    <!-- <ul class="plan-offer">
+                        <li>
+                            <i class="list-icon fa-regular fa-user"></i> 
+                            1 utente
+                        </li>
+                        <li>
+                            <i class="list-icon fa-regular fa-folder"></i>
+                            3TB di spazio di archiviazione sicuro
+                        </li>
+                        <li>
+                            <i class="list-icon fa-solid fa-pen"></i>
+                            Funzioni di produttività premium 
+                            e condivisione file semplice e sicura
+                        </li>
+                    </ul> -->
+                    <button class="btn">Prova gratis per 30 giorni</button>
+                    <p> 
+                        Soluzioni personalizzate e supporto su misura per aiutare 
+                        i professionisti IT nella gestione su qualsiasi scala
+                    </p>
+                    <!-- <div class="call">
+                        <span>oppure</span>
+                        <a href="">aquista ora</a>
+                    </div>
+                    <ul class="plans-list">
+                        <li class="list-title">Punti salienti del piano</li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Invia file fino a 100GB con DropBox
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Cartelle offline su dispositivi mobili
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Pulizia remota dell'account
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Filigrana documento
+                        </li>
+                        <li class="list-item">
+                            <i class="fa-solid fa-check"></i>
+                            Assistenza prioritaria via email e chat
+                        </li>
+                    </ul> -->
+                </div>
+            </article>
         </section>
-        <section id="main-partner" class="main-container clearfix"></section>
+        <!-- Image and text aside -->
+        <section id="main-partner" class="main-container clearfix">
+            <img src="img/partner.png" alt="Parter initiative">
+            <aside>
+                <h3 class="aside-title">Entra in contatto con un partner Dropbox</h3>
+                <p>
+                    Trova un partner Dropbox e HelloSign di fiducia.
+                    Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi 
+                    obiettivi aziendali, tra cui implementazione, integrazione, gestione
+                    e supporto continui.
+                </p>
+                <button class="btn btn-white">Trova un partner</button>
+            </aside>
+        </section>
         <section id="main-info" class="main-container clearfix"></section>
         <section id="main-carousel" class="main-container clearfix"></section>
         <section id="main-faq" class="main-container clearfix"></section>    

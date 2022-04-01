@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropBox</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/50320cf54b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -13,88 +15,147 @@
     <header class="clearfix">
         <nav class="navbar nav-left">
             <ul class="clearfix">
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
+                <li class="img-logo">
+                    <img src="img/logo-small.png" alt="Small Logo site">
+                </li>
+                <li>Perchè DropBox?</li>
+                <li>Funzioni</li>
+                <li>Piani e prezzi</li>
             </ul>
         </nav>
         <nav class="navbar nav-right">
             <ul class="clearfix">
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
+                <li>Supporto</li>
+                <li>Contatta l'ufficio vendite</li>
+                <li>Accedi</li>
+                <li class="btn btn-login">Inizia</li>
             </ul>
         </nav>
     </header>
     <!-- Main DEBUG, only the initial settings -->
     <main>
         <!-- Big Jumbo Tron floating and img in absolute positioning -->
-        <div id="main-jumbo" class="jumbo clearfix">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-            <div class="container">
+        <section id="main-jumbo" class="jumbo clearfix">
+            <h1>Tutto ciò che ti serve per il lavoro in un unico posto</h1>
+            <section>
                 <img class="img-jumbo" src="img/jumbo.png" alt="Jumbotron image">
                 <p> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Temporibus quo commodi nesciunt consequuntur quis excepturi 
-                    doloremque deleniti autem reprehenderit nobis sit iste similique eum, 
-                    dignissimos recusandae deserunt aspernatur repudiandae. Voluptates.
+                    Finalmente tutti i tuoi strumenti, contenuti e 
+                    collaboratori sono accessibili dallo stesso posto.
+                    Dropbox business è uno spazio di archiviazione sicuro:
+                    è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                 </p>
-                <button>This is a button</button>
-                <p>This is a text here</p>
-                <!-- Icon here -->
+                <button class="btn">Inizia la tua prova gratuita</button>
+                <p>Annulla in qualsiasi momento</p>
+                <i id="icon-arrow-down" class="fa-solid fa-arrow-down"></i>
+            </section>
+        </section>
+        <!-- Rest of main, title, short radio select, 4 different boxes -->
+        <section id="main-plans" class="main-container clearfix">
+            <h2 class="cont-title">Trova il piano Dropbox Business che fa per te</h2>
+            <div class="fattura">
+                <div class=>Fatturazione mensile</div>
+                <div class=>Fatturazione annuale</div>
             </div>
-        </div>
-        <div id="main-plans" class="temp"></div>
-        <div id="main-partner" class="temp"></div>
-        <div id="main-info" class="temp"></div>
-        <div id="main-carousel" class="temp"></div>
-        <div id="main-faq" class="temp"></div>    
+            <!-- 4 Boxes in float, 3 + 1 full page -->
+            <article class="plans">
+                <div class="plans-group"></div>
+                <div class="plans-main">
+                    <h4>Professional</h4>
+                    <div class="price">19.99$</div>
+                    <div class="price-range">/mese</div>
+                    <ul class="price-offer">
+                        <li>1 utente</li>
+                        <li>3TB di spazio di archiviazione sicuro</li>
+                        <li>
+                            Funzioni di produttività premium 
+                            e condivisione file semplice e sicura
+                        </li>
+                    </ul>
+                    <button class="btn">Prova gratis per 30 giorni</button>
+                    <div class="call">oppure <a href="">aquista ora</a></div>
+                    
+                    <ul class="plans-list">
+                        <li class="list-title">Punti salienti del piano</li>
+                        <li>
+                            <!-- icon here -->
+                            Invia file fino a 100GB con DropBox
+                        </li>
+                        <li>
+                            <!-- icon here -->
+                            Cartelle offline su dispositivi mobili
+                        </li>
+                        <li>
+                            <!-- icon here -->
+                            Pulizia remota dell'account
+                        </li>
+                        <li>
+                            <!-- icon here -->
+                            Filigrana documento
+                        </li>
+                        <li>
+                            <!-- icon here -->
+                            Assistenza prioritaria via email e chat
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+
+        </section>
+        <section id="main-partner" class="main-container clearfix"></section>
+        <section id="main-info" class="main-container clearfix"></section>
+        <section id="main-carousel" class="main-container clearfix"></section>
+        <section id="main-faq" class="main-container clearfix"></section>    
     </main>
     <!-- Footer DEBUG Status to be finished -->
     <footer class="clearfix">
         <div>
             <ul>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
+                <li class="foot-title">DropBox</li>
+                <li>Applicazione desktop</li>
+                <li>Perchè DropBox</li>
+                <li>Piani</li>
+                <li>Sicurezza</li>
+                <li>Funzioni</li>
             </ul>
             <ul>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
+                <li class="foot-title">Prodotti</li>
+                <li>Applicazione desktop</li>
+                <li>Perchè DropBox</li>
+                <li>Piani</li>
+                <li>Sicurezza</li>
+                <li>Funzioni</li>
             </ul>
             <ul>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
+                <li class="foot-title">Azienda</li>
+                <li>Applicazione desktop</li>
+                <li>Perchè DropBox</li>
+                <li>Piani</li>
+                <li>Sicurezza</li>
+                <li>Funzioni</li>
             </ul>
             <ul>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
+                <li class="foot-title">Supporto</li>
+                <li>Applicazione desktop</li>
+                <li>Perchè DropBox</li>
+                <li>Piani</li>
+                <li>Sicurezza</li>
+                <li>Funzioni</li>
             </ul>
             <ul>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
-                <li>items</li>
+                <li class="foot-title">Community</li>
+                <li>Applicazione desktop</li>
+                <li>Perchè DropBox</li>
+                <li>Piani</li>
+                <li>Sicurezza</li>
+                <li>Funzioni</li>
             </ul>
         </div>
         <div class="lang-select">
-            <!-- Here icons -->
+            <i class="fa-solid fa-earth-americas"></i>
             Language
-            <!-- Here icons -->
+            <i class="fa-solid fa-caret-up"></i>
         </div>
     </footer>
 </div>

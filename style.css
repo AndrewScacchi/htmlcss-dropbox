@@ -24,15 +24,12 @@ h1 {
 h2 {
     font-size: 2em;
     font-weight: bold;
-    margin: 0.2em 0;
+    margin: 1em 0;
 }
-
-
-/* COLORS
-    btn   #0061ff        
-    back     #b4d0e7      
-    footer  #000000
-*/
+a {
+    color: #0061ff;
+    margin: 2em 0;
+}
 
 /* HEADER SETTINGS */
 /* Sticky header */
@@ -42,7 +39,7 @@ header {
     width: 100%;
     background-color: white;
     border-bottom: 1px solid black;
-    z-index: 10;
+    z-index: 100;
 }
 /* Floating the two navs */
 header .nav-left {
@@ -140,16 +137,13 @@ article div  *{
     border: 1px solid black;
     border-top: none;
 }
-.plan-main a {
-    font-weight: bold;
-    color: #0061ff;
-}
+
+
 .plan-main .btn {
     width: 100%;
     margin: 5% 0;
     padding: 1em 2em;
 }
-
 .plan-title {
     font-size: 2em;
     font-weight: bold;
@@ -234,6 +228,146 @@ article div  *{
     font-size: 1.6em;
     font-weight: bold;
 }
+
+/* Info Section */
+.box {
+    float: left;
+    width: 32%;
+    height: 550px;
+}
+.box:nth-child(3n+3){
+    margin: 0 2%;
+}
+.box img {
+    width: 100%;
+}
+.box h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+.box p {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+/* Carousel Section */
+#main-carousel {
+    width: 100%;
+}
+#main-carousel > * {
+    float: left;
+}
+#main-carousel h2,
+#main-carousel a{
+    width: 70%;
+    margin: 20px 15%;
+}
+#main-carousel .square-big {
+    position: relative;
+    width: 33.3%;
+}
+
+/* Squares and Rectangles */
+.square {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.rectangle {
+    position: relative;
+    width: 100%;
+    background-color: #d0c9cd;
+    padding: 8em 15%;
+}
+.rectangle #h3-violet {
+    float: left;
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 50%;
+    color: purple;
+}
+.rectangle .btn {
+    float:right;
+    width: 30%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+
+.square:after,
+.square-big:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+/* square absolute content */
+.square-content {
+    position: absolute;
+    z-index: 10;
+    filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(232deg) brightness(103%) contrast(103%);
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    transform: translate(-50%, -50%);
+}
+
+/* Single square selectors */
+#square-1 {
+    background-color: #a2d39b;
+    border: 10px solid #d0c9cd;
+}
+#square-1 .square-content {
+    width: 60%;
+}
+#square-2 {
+    background-color: #61082b;
+}
+#square-3 {
+    background-color: #0093ce;
+}
+#square-4 {
+    background-color: #ff1c1c;
+}
+
+#square-big-center {
+    background-color: #f5f5f5;
+}
+#square-big-center .square-big-logo {
+    width: 40%;
+  }
+#square-big-center .square-content {
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 3em;
+    filter: invert(0%) sepia(98%) saturate(7437%) hue-rotate(183deg) brightness(105%) contrast(98%);
+}
+#square-big-center p {
+    margin: 4em 0 1em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+#square-5 {
+    background-color: #d5001f;
+}
+#square-6 {
+    background-color: #b4d0e7;
+}
+#square-7 {
+    background-color: #0d2481;
+}
+#square-8 {
+    background-color: #ffd830;
+}
+
+/* FAQ Sections */
+
+
 
 
 /* FOOTER */

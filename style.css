@@ -19,11 +19,10 @@ p {
 }
 h1 {
     font-size: 3em;
-    font-weight: bold;
+    margin-top: 60px; /* correct pos in short width */
 }
 h2 {
     font-size: 2em;
-    font-weight: bold;
     margin: 1em 0;
 }
 a {
@@ -49,7 +48,7 @@ header .nav-right {
     float: right;
 }
 header ul {
-    margin: 1em 1em;
+    margin: 1em;
 }
 nav ul li {
     line-height: 1em;
@@ -81,7 +80,6 @@ nav ul li {
 
 .img-jumbo {
     position: absolute;
-    /* Debug */
     max-width: 900px;
     width: 150%;
     right: -150%;
@@ -123,16 +121,19 @@ article.plan-center {
     margin-right: 5%;
 }
 article div  *{
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 .plan-group {
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     width: 100%;
     border: 1px solid black;
 }
 .plan-main {
-    height: 900px;
+    /* Debug */
+    min-height: 900px; 
+    /* overflow: scroll; */
+    /* Debug */
     padding: 1em 1.5em;
     border: 1px solid black;
     border-top: none;
@@ -194,7 +195,7 @@ article div  *{
     margin: 50px 0;
 }
 #plan-bottom .plan-main {
-    height: 250px;
+    min-height: 250px;
 }
 #plan-bottom .plan-main div {
     float: left;
@@ -243,7 +244,6 @@ article div  *{
 }
 .box h3 {
     font-size: 1.5em;
-    font-weight: bold;
     margin: 1em 0;
 }
 .box p {
@@ -305,12 +305,17 @@ article div  *{
 
 /* square absolute content */
 .square-content {
+    /* Debug */
+    overflow: scroll;
+    max-height: 100%;
+    /* Debug */
     position: absolute;
     z-index: 10;
     filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(232deg) brightness(103%) contrast(103%);
     top: 50%;
     left: 50%;
     width: 55%;
+    
     transform: translate(-50%, -50%);
 }
 
@@ -445,3 +450,24 @@ footer .foot-title {
     clear: both;
     display: table;
   }
+
+  /* Debug Style TBA */
+
+  /* .pad-all {
+      padding: 0.5em 1em;
+  }
+  .margin-top-bot {
+      margin: 1em 0;
+  }
+  .margin-all {
+      margin: 1em;
+  } 
+  .marg-centered {
+      margin: 1em 15%;
+  }
+  .pad-centered {
+      padding: 1em 15%
+  }
+  
+  
+  */

@@ -78,23 +78,23 @@ nav ul li {
     position: relative
 }
 .nav-li:hover {
-    /* cursor: pointer; */
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
+
 /* Dropdown Menu test */
 
 .dropdown {
     position: relative;
-    /* display: inline-block; */
   } 
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 200px;
-    z-index: 1;
-    top: 80px;
+    z-index: 101;
+    top: 79px;
     right: 0;
+    border-top: 2px solid black;
     background-color: #ffffff;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
  }
@@ -105,7 +105,6 @@ nav ul li {
     text-decoration: none;
     display: block;
 }
-  
 .dropdown-content a:hover {
     background-color: #ddd;
     font-weight: bold;
@@ -116,24 +115,8 @@ nav ul li {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-  
-
 
 /* End Dropdown test */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #img-logo {
     padding: 1.6em 0;
@@ -221,12 +204,11 @@ article div  *{
     border: 1px solid black;
     border-top: none;
     /* Debug */
-    min-height: 900px; 
+    min-height: 800px; 
     overflow: scroll;
     /* Debug */
     padding: 1em 1.5em;
 }
-
 
 .plan-main .btn {
     width: 100%;
@@ -523,6 +505,7 @@ footer .foot-title {
     color: white;
     border: none;
     font-size: 0.8em;
+    text-decoration: none;
     /* debug */
     padding: 0.5em 1em;
     margin: 0.5em 0;
@@ -545,6 +528,34 @@ footer .foot-title {
     font-weight: bold;
 }
 
+/* ACCESS PAGE STYLE */
+
+.container {
+    height: 400px;
+    background-color: #eee;
+    color: #0061ff;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin: 100px 15% 1em;
+}
+#access-title,
+form {  
+    width: 50%;
+    margin: 1em auto 0.5em;
+}
+form input {
+    width: 80%;
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.2em;
+}
+input.btn {
+    width: 40%;
+    height: 2em;
+    font-size: 1.5em;
+}
+
 /* Clearfix Settings */
 
 .clearfix::after {
@@ -553,8 +564,8 @@ footer .foot-title {
     display: table;
   }
 
-  /* Debug Style TBA */
-
+/* STYLE for KISS CSS */
+/* Yeah i know not all this classes are even in use */
   
   .pad-all-1 {
       padding: 1em;

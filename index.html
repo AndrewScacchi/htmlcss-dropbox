@@ -12,23 +12,51 @@
 <body>
 <div id="wrapper">
     <!-- Header, just two nav float, with logo and buttons insert -->
-    <header class="clearfix">
+    <header class="clearfix pad-side-1">
         <nav class="navbar nav-left">
             <ul class="clearfix">
-                <li class="img-logo">
+                <li id="img-logo">
                     <img src="img/logo-small.png" alt="Small Logo site">
                 </li>
-                <li>Perchè DropBox?</li>
-                <li>Funzioni</li>
-                <li>Piani e prezzi</li>
+                <li>
+                    <a class="nav-li" href="#main-jumbo">
+                        Perchè DropBox?
+                    </a> 
+                </li>
+                <li>
+                    <a class="nav-li" href="#main-info">
+                        Funzioni
+                    </a>   
+                </li>
+                <li class="nav-li dropdown">
+                        Piani e prezzi
+                        <div class="dropdown-content">
+                            <a class="pad-all-1" href="#main-plans">Professional</a>
+                            <a class="pad-all-1" href="#main-plans">Standard</a>
+                            <a class="pad-all-1" href="#main-plans">Advance</a>
+                            <a class="pad-all-1" href="#plan-bottom">Enterprise</a>
+                        </div>
+                </li>
             </ul>
         </nav>
         <nav class="navbar nav-right">
             <ul class="clearfix">
-                <li>Supporto</li>
-                <li>Contatta l'ufficio vendite</li>
-                <li>Accedi</li>
-                <li class="btn btn-login">Inizia</li>
+                <li>
+                    <a href="#main-faq" class="nav-li">
+                        Supporto
+                    </a>
+                </li>
+                <li>
+                    <a href="#main-partner" class="nav-li">
+                        Contatta l'ufficio vendite
+                    </a>
+                </li>
+                <li>
+                    <a href="#rectangle" class="nav-li">
+                        Accedi
+                    </a>
+                </li>
+                <li id="btn-login" class="btn">Inizia</li>
             </ul>
         </nav>
     </header>
@@ -382,15 +410,15 @@
                 </div>
             </div>
             <div id="square-big-center" class="square-big"> 
-                <div class="square-content">
+                <div class="square-content pad-all-2">
                     <img class="square-big-logo" src="img/designit.svg" alt="Designit logo">
-                    <p>
+                    <p class="marg-top-bot">
                         "I membri del nostro team lavorano costantemente in Paesi, fusi orari 
                         e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze,
                         ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono
                         compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper"
                     </p>
-                    <p>Morten Thomsen, Global IT Lead</p>
+                    <p class="marg-top-bot">Morten Thomsen, Global IT Lead</p>
                 </div>       
             </div>
             <div class="square-big">
@@ -407,7 +435,7 @@
                     <img class="square-content" src="img/clear_channel.svg" alt="Clear Channel logo">
                 </div>
             </div>
-            <div class="rectangle">
+            <div id="rectangle" class="rectangle">
                 <div class="rectangle-content">
                     <h3 id="h3-violet">Porta Dropbox Business nella tua azienda.</h3>
                     <button class="btn btn-white">Inizia la tua prova gratuita</button>
@@ -417,19 +445,19 @@
         <section id="main-faq" class="main-container clearfix">
             <h2>Domande Frequenti</h3>
             <ul>
-                <li class="faq-first">
+                <li class="faq-first pad-top-bot">
                     Quale è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
                     <i class="fa-solid fa-angle-down"></i>
                 </li>
-                <li>
+                <li class="pad-top-bot">
                     Quale è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
                     <i class="fa-solid fa-angle-down"></i>
                 </li>
-                <li>
+                <li class="pad-top-bot">
                     Quale è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
                     <i class="fa-solid fa-angle-down"></i>
                 </li>
-                <li>
+                <li class="pad-top-bot">
                     Quale è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
                     <i class="fa-solid fa-angle-down"></i>
                 </li>
@@ -437,10 +465,10 @@
         </section>    
     </main>
     <!-- Footer DEBUG Status completed -->
-    <footer class="clearfix">
+    <footer class="clearfix pad-centered-10">
         <div>
             <ul>
-                <li class="foot-title">DropBox</li>
+                <li class="foot-title pad-top-bot">DropBox</li>
                 <li>Applicazione desktop</li>
                 <li>Perchè DropBox</li>
                 <li>Piani</li>
@@ -448,7 +476,7 @@
                 <li>Funzioni</li>
             </ul>
             <ul>
-                <li class="foot-title">Prodotti</li>
+                <li class="foot-title pad-top-bot">Prodotti</li>
                 <li>Applicazione desktop</li>
                 <li>Perchè DropBox</li>
                 <li>Piani</li>
@@ -456,7 +484,7 @@
                 <li>Funzioni</li>
             </ul>
             <ul>
-                <li class="foot-title">Azienda</li>
+                <li class="foot-title pad-top-bot">Azienda</li>
                 <li>Applicazione desktop</li>
                 <li>Perchè DropBox</li>
                 <li>Piani</li>
@@ -464,7 +492,7 @@
                 <li>Funzioni</li>
             </ul>
             <ul>
-                <li class="foot-title">Supporto</li>
+                <li class="foot-title pad-top-bot">Supporto</li>
                 <li>Applicazione desktop</li>
                 <li>Perchè DropBox</li>
                 <li>Piani</li>
@@ -472,7 +500,7 @@
                 <li>Funzioni</li>
             </ul>
             <ul>
-                <li class="foot-title">Community</li>
+                <li class="foot-title pad-top-bot">Community</li>
                 <li>Applicazione desktop</li>
                 <li>Perchè DropBox</li>
                 <li>Piani</li>

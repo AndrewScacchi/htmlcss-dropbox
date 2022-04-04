@@ -25,9 +25,26 @@ h2 {
     font-size: 2em;
     margin: 1em 0;
 }
+
 a {
+    display: inline-block;
     color: #0061ff;
-    margin: 2em 0;
+}
+
+/* Trick to display better the anchor with fixed nav */
+#main-jumbo:before,
+#main-plans:before,
+#main-partner:before,
+#main-info:before,
+#main-carousel:before, 
+#main-faq:before,
+#rectangle:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 120px;
+    margin-top: -120px;
 }
 
 /* HEADER SETTINGS */
@@ -47,33 +64,99 @@ header .nav-left {
 header .nav-right {
     float: right;
 }
-header ul {
-    margin: 1em;
-}
 nav ul li {
-    line-height: 1em;
     float: left;
-    margin: 0.6em 0.5em;
-}
-/* Attempt at correcting logo positioning */
-.img-logo {
-    margin-top: 0.2em;
 }
 
+/* Header hover functionality */
+
+.nav-li {
+    text-decoration: none;
+    color: black;
+    height: 80px;
+    padding: 2em 0.5em;  
+    position: relative
+}
+.nav-li:hover {
+    /* cursor: pointer; */
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+/* Dropdown Menu test */
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+  } 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+ }
+
+.dropdown-content a {
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+.dropdown:hover {
+    background-color: #fdfdfd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+
+/* End Dropdown test */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#img-logo {
+    padding: 1.6em 0;
+}
+#btn-login {
+    margin: 2em 0;
+}
 
 /* MAIN SETTINGS */
 /* Jumbotron settings */
 
 #main-jumbo {
-    margin: 60px 0 100px;
-    padding: 5% 10%;
     min-height: 550px;
     background-color: #b4d0e7;
+    /* debug */
+    margin: 60px 0 100px;
+    padding: 5% 10%;
 }
 #main-jumbo div {
     position: relative;
     float: left;
     width: 40%;
+    /* debug */
     margin-top: 50px;
     padding-right: 2em;
 }
@@ -90,6 +173,7 @@ nav ul li {
 .main-container {
     width: 70%;
     min-height: 300px;
+    /* debug */
     margin: 100px auto;
 }
 .main-container > * {
@@ -97,12 +181,14 @@ nav ul li {
 }
 .main-container h2{
     width: 100%;
-    margin-top: 50px;
     font-size: 3.4em;
+    /* debug */
+    margin-top: 50px;
 }
 .main-container .fattura {
     width: 100%;
-    margin: 1em 0 4em;
+    /* debug */
+    margin: 1em 0 4em; 
 }
 .main-container .fattura div {
     display: inline-block;
@@ -121,48 +207,54 @@ article.plan-center {
     margin-right: 5%;
 }
 article div  *{
+    /* debug */
     margin: 0.5em 0;
 }
 .plan-group {
     text-align: center;
-    padding: 0.5em 0.5em;
     width: 100%;
     border: 1px solid black;
+    /* debug */
+    padding: 0.5em;
 }
 .plan-main {
-    /* Debug */
-    min-height: 900px; 
-    /* overflow: scroll; */
-    /* Debug */
-    padding: 1em 1.5em;
     border: 1px solid black;
     border-top: none;
+    /* Debug */
+    min-height: 900px; 
+    overflow: scroll;
+    /* Debug */
+    padding: 1em 1.5em;
 }
 
 
 .plan-main .btn {
     width: 100%;
+    /* debug */
     margin: 5% 0;
     padding: 1em 2em;
 }
 .plan-title {
     font-size: 2em;
     font-weight: bold;
+    /* debug */
     margin: 0.5em 0;
 }
 .plan-price {
     font-weight: bold;
     font-size: 1.2em;
+    /* debug */
     margin: 0.5em 0 ;
 }
 .plan-price-range {
     font-weight: small;
     font-style: italic;
+    /* debug */
     margin-bottom: 2em;
 }
 .plan-offer li {
-    padding-left: 2em;
     position: relative;
+    padding-left: 2em;
 }
 .plan-offer .list-icon,
 .list-item i {
@@ -192,6 +284,7 @@ article div  *{
 /* plan bottom */
 #plan-bottom {
     width: 100%;
+    /* debug */
     margin: 50px 0;
 }
 #plan-bottom .plan-main {
@@ -203,6 +296,7 @@ article div  *{
 #plan-bottom .plan-main .btn {
     float: right;
     width: 30%;
+    /* debug */
     margin-top: 2em;
 }
 #plan-bottom p {
@@ -219,11 +313,13 @@ article div  *{
 #main-partner aside {
     float: right;
     width: 40%;
+    /* debug */
     padding: 2em 0 2em 3em;
 }
 #main-partner aside > * {
-    margin: 1em 0;
     font-size: 1.2em;
+    /* debug */
+    margin: 1em 0;
 }
 #main-partner .aside-title {
     font-size: 1.6em;
@@ -244,11 +340,13 @@ article div  *{
 }
 .box h3 {
     font-size: 1.5em;
+    /* debug */
     margin: 1em 0;
 }
 .box p {
-    margin: 1em 0;
     line-height: 1.5em;
+    /* debug */
+    margin: 1em 0;
 }
 
 /* Carousel Section */
@@ -261,6 +359,7 @@ article div  *{
 #main-carousel h2,
 #main-carousel a{
     width: 70%;
+    /* debug */
     margin: 20px 15%;
 }
 #main-carousel .square-big {
@@ -278,6 +377,7 @@ article div  *{
     position: relative;
     width: 100%;
     background-color: #d0c9cd;
+    /* debug */
     padding: 8em 15%;
 }
 .rectangle #h3-violet {
@@ -305,10 +405,7 @@ article div  *{
 
 /* square absolute content */
 .square-content {
-    /* Debug */
     overflow: scroll;
-    max-height: 100%;
-    /* Debug */
     position: absolute;
     z-index: 10;
     filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(232deg) brightness(103%) contrast(103%);
@@ -344,15 +441,14 @@ article div  *{
     width: 40%;
   }
 #square-big-center .square-content {
+    filter: invert(0%) sepia(98%) saturate(7437%) hue-rotate(183deg) brightness(105%) contrast(98%);
+    width: 100%;
+    height: 100%;
+    transform: translate(0);
     top: 0;
     left: 0;
-    transform: translate(0);
-    width: 100%;
-    padding: 2em;
-    filter: invert(0%) sepia(98%) saturate(7437%) hue-rotate(183deg) brightness(105%) contrast(98%);
 }
 #square-big-center p {
-    margin: 2.5em 0 1em;
     line-height: 1.2em;
     font-size: 1.2em;
 }
@@ -373,6 +469,7 @@ article div  *{
 /* FAQ Sections */
 #main-faq h2 {
     font-size: 3em;
+    /* debug */
     margin-top: 0;
 }
 #main-faq ul {
@@ -382,11 +479,11 @@ article div  *{
     font-weight: bold;
 }
 #main-faq ul li {
-    padding: 1.5em 0;
     border-bottom: 1px solid #dcdcde;
 }
 #main-faq ul i {
     float: right;
+    /* debug */
     margin-right: 2em;
 }
 .faq-first{
@@ -396,7 +493,6 @@ article div  *{
 /* FOOTER */
 
 footer {
-    padding: 5% 10%;
     background-color: black;
     color: white;
     font-size: 0.7em;
@@ -406,34 +502,40 @@ footer ul {
     width: 20%;
 }
 footer ul li {
-    margin: 0.6em 0;
+    /* debug */
+    margin: 0.75em 0;
 }
 footer .lang-select {
     display: inline-block;
+    border-top: 1px solid white;
+    /* debug */
     margin-top: 5em;
     padding: 3em 2em 0 0.5em;
-    border-top: 1px solid white;
 }
 footer .foot-title {
     font-size: 1.5em;
     font-weight: bold;
-    margin: 1em 0;
 }
 
 /* BUTTONS */
 .btn {
+    background-color: #0061ff;
+    color: white;
+    border: none;
+    font-size: 0.8em;
     /* debug */
     padding: 0.5em 1em;
-    color: white;
-    font-size: 0.8em;
     margin: 0.5em 0;
-    background-color: #0061ff;
-    border: none;
 }
 .btn-white {
     border: 1px solid black;
     background-color: white;
     color: black;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(101%);
+    box-shadow: 0.5px 1px 2px black;
 }
 
 /* Icons Styles */
@@ -453,21 +555,32 @@ footer .foot-title {
 
   /* Debug Style TBA */
 
-  /* .pad-all {
-      padding: 0.5em 1em;
+  
+  .pad-all-1 {
+      padding: 1em;
   }
-  .margin-top-bot {
+  .pad-all-2 {
+    padding: 2em;
+}
+  .pad-top-bot {
+      padding: 1em 0;
+  }
+  .pad-side-1 {
+      padding: 0 1em;
+  }
+  .marg-top-bot {
       margin: 1em 0;
   }
-  .margin-all {
+  .marg-all {
       margin: 1em;
   } 
   .marg-centered {
       margin: 1em 15%;
   }
-  .pad-centered {
-      padding: 1em 15%
+  .pad-centered-15 {
+      padding: 2em 15%
   }
+  .pad-centered-10 {
+    padding: 2em 10%
+}
   
-  
-  */

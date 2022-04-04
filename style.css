@@ -472,6 +472,20 @@ article div  *{
     border-top: 1px solid #dcdcde;
 }
 
+/* FAQ Dropdown on hover with background change whoooo */
+.faq-dropdown{
+    display: none;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.5em; 
+}
+#main-faq li:hover {
+    background-color: #eee;
+}
+li:hover .faq-dropdown{
+    display: block;
+}
+
 /* FOOTER */
 
 footer {
